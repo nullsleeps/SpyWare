@@ -1,4 +1,3 @@
-# Virus Beginning
 
 import sys
 import glob
